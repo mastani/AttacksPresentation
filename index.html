@@ -1,0 +1,356 @@
+<!--
+
+سلام :)
+لگر ازین ارائه خوشتون اومده و میخواهید یاد بگیرین چجوریاس برین به این لینک
+اسم این کتابخونه impress.js هست
+
+https://github.com/impress/impress.js/
+
+دوسدار شما. امین مستانی :)
+
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=1024"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <title>انواع حملات اینترنتی و راه های مقابله با آن</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
+          rel="stylesheet"/>
+    <link href="css/fontiran.css" rel="stylesheet"/>
+    <link href="css/impress-demo.css" rel="stylesheet"/>
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified
+        version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+    <div id="intro" class="step slide" data-x="9000" data-y="-1500">
+        <img style="float: left; padding-top: 50px;" src="img/logo.png">
+        <br/><br/><br/><br/>
+        <p style="font-size: 42px; color: black;">عنوان ارائه:</p><br/>
+        <strong style="color: black;">انواع حملات اینترنتی و راه های مقابله با آن</strong>
+        <br/><br/><br/>
+        <p style="color: black;">استاد: سعید کهساری</p>
+        <br/>
+        <p style="color: black;">تهیه ارائه: امین مستانی یزد</p>
+        <br/>
+        <p style="color: black;">درس کارگاه رایانه</p>
+        <br/>
+        <p style="font-size: 18px; float: left">7 خرداد 1396</p>
+    </div>
+
+    <div id="cats" class="step" data-x="10000" data-y="-1500" data-rotate="180">
+        <p style="font-size: 50px; color: #4b91dc; float: right; direction: rtl">فهرست:</p>
+        <br/>
+        <br/>
+        <ul style="list-style: circle; font-size: 35px; margin-right: 20px; direction: rtl">
+            <li>تعاریف</li>
+            <li>بررسی مشکل</li>
+            <li>انواع حملات</li>
+            <li>
+                <ul style="list-style: circle; font-size: 25px; margin-right: 20px; direction: rtl">
+                    <li>DDoS</li>
+                    <li>Spoofing</li>
+                    <li>MITM</li>
+                    <li>Brute Force</li>
+                    <li>Back Door</li>
+                </ul>
+            </li>
+            <li>سرویس های ویندوز</li>
+        </ul>
+    </div>
+
+    <div id="defs" class="step slide" data-x="9000" data-y="100">
+        <p style="font-size: 42px; color: black;">تعریف اتک:</p><br/>
+        <p>عملی که باعث ایجاد وقفه در سرویس دهی یک سیستم می شود.</p><br/>
+        <p>این ضعف ها در یک سیستم که اجازه بروز همچین مشکلاتی را می دهد بخاطر اشتباه نرم افزاری است.</p><br/>
+        <p>این اشتباه های نرم افزاری به هکر/اتکر اجازه دسترسی به سیستم یا شبکه را می دهد.</p><br/><br/><br/>
+        <p style="float: left; direction: ltr;">* Vulnerability</p><br/>
+        <p style="float: left; direction: ltr;">* Exploit</p><br/>
+        <p style="float: left; direction: ltr;">* Zero day</p><br/>
+        <p style="float: left; direction: ltr;">* Privilege escalation</p><br/>
+    </div>
+
+    <div id="concern" class="step slide" data-x="9000" data-y="1000">
+        <p style="font-size: 42px; color: black;">چجوری مشکل بوجود میاد ؟</p><br/>
+        <img style="display: block; margin-left: auto; margin-right: auto;" width="500" src="img/Picture1.jpg">
+        <br/>
+        <p style="font-size: 28px;">- وجود ضعف در سیستم ها</p>
+        <p style="font-size: 28px;">- سو استفاده افراد برای مقاصد مالی و کسب شهرت</p>
+        <p style="font-size: 28px;">- بروز رسانی دیر هنگام سرویسهای معیوب</p>
+    </div>
+
+    <div id="kinds" class="step" data-x="9000" data-y="-5000" data-scale="10">
+        <p style="font-size: 42px; color: black; float: right; direction: rtl">پر استفاده ترین حملات :</p><br/>
+        <ol style="list-style: upper-roman;">
+            <li>Spoofing <span style="font-size: 60%">(جعل هویت)</span></li>
+            <li>Back Door <span style="font-size: 60%">(در پشتی)</span></li>
+            <li>Man in the Middle <span style="font-size: 60%">(مرد میانی)</span></li>
+            <li>Brute Force <span style="font-size: 60%">(?)</span></li>
+            <li>DoS & DDoS <span style="font-size: 60%">(?)</span></li>
+        </ol>
+    </div>
+
+    <div id="DosAndDdos" class="step slide" data-x="9000" data-y="1900" data-rotate-x="180">
+        <p style="font-size: 35px; color: black; float: right; direction: rtl">حملات از نوع (DDoS (Distributed Denial of
+            Service</p>
+        <br/>
+        <br/>
+        <br/>
+        <ul style="list-style: circle; font-size: 30px; margin-right: 20px">
+            <li>ايجاد ترافيک کاذب در شبکه</li>
+            <li>اختلال در ارتباط بين دو ماشين</li>
+            <li>ممانعت کاربران مجاز به منظور دستيابی به يک سرويس</li>
+        </ul>
+        <br/>
+        <br/>
+        <p style="font-size: 28px;">هدف از حملات DoS، ايجاد اختلال در منابع و يا سرويس هائی است که کاربران قصد دستيابی و
+            استفاده از آنان را دارند (از کار انداختن سرويس ها)</p>
+        <br/>
+        <img style="display: block; margin-left: auto; margin-right: auto;" src="img/dos.jpg">
+    </div>
+
+    <div id="dos" class="step slide" data-x="9000" data-y="2800" data-rotate-x="180">
+        <img width="100%" style="display: block; margin-left: auto; margin-right: auto;" src="img/ddos.png">
+    </div>
+
+    <div id="ddos-kinds" class="step" data-x="10000" data-y="2800" data-rotate-x="180">
+        <p style="font-size: 40px; color: black; float: right; direction: rtl">انواع حملات DDoS</p>
+        <br/>
+        <ul style="list-style: circle; font-size: 35px; margin-left: 30px; direction: ltr">
+            <li>Smurf/Smurfing</li>
+            <li>Fragle</li>
+            <li>Ping of death</li>
+            <li>SYN Flood (ارتباطات نيمه فعال)</li>
+            <li>Land (Same source & destination ip)</li>
+            <li>Bonk (Kind of dns attack)</li>
+            <li>Zombies</li>
+        </ul>
+        <br/>
+        <br/>
+    </div>
+
+    <div id="question" class="step" data-x="10000" data-y="3000" data-rotate="300" data-scale="1">
+        <p style="direction: rtl; font-size: 50px">در مورد حمله از نوع DDoS سوالی دارید ؟</p>
+    </div>
+
+    <div id="spoofing" class="step slide" data-x="8000" data-y="-700">
+        <p style="font-size: 40px; color: #4b91dc; float: right; direction: rtl">حملات از نوع Spoofing</p>
+        <br/>
+        <br/>
+        <br/>
+        <p style="font-size: 24px;">به معنای ساخت IP Packet بدست هر کسی جز آدرس های اصلی مبداء (IP Source Addresses)
+            است. این روش با دلایل روشنی مورد استفاده قرار میگیرد.</p>
+        <br/>
+        <br/>
+        <img style="display: block; margin-left: auto; margin-right: auto;" src="img/Picture2.jpg" width="700">
+    </div>
+
+    <div id="spoofing_ddos" class="step slide" data-x="8000" data-y="100">
+        <p style="font-size: 40px; color: #4b91dc; float: right; direction: rtl">ترکیبی از DDoS و IP Spoofing</p>
+        <img style="display: block; margin-left: auto; margin-right: auto;" src="img/Picture3.png" width="700">
+    </div>
+
+    <div id="ManInTheMidlle" class="step slide" data-x="8000" data-y="900">
+        <p style="font-size: 40px; color: #4b91dc; float: right; direction: rtl">حملات از نوع Man In the Middle</p>
+        <br/>
+        <br/>
+        <br/>
+        <p style="font-size: 28px; line-height: 46px;">
+            MITM، یک حمله استراق سمع فعال است که بوسیله برقراری ارتباط با ماشین قربانی و باز پخش پیغام‌ها بین آن‌ها کار
+            می‌کند. در اینگونه موارد، یک قربانی بر این باور است که با قربانی دیگر به طور مستقیم ارتباط برقرار کرده است
+            در حالی که در حقیقت ارتباط از طریق میزبانی که این حمله را انجام می‌دهد در جریان است. نتیجه نهایی این است که
+            میزبان حمله کننده نه تنها می‌تواند اطلاعات حساس را رهگیری کند، بلکه می تواند برای بدست آوردن کنترل بیشتر
+            سیستم قربانی‌ها، یک جریان داده را تزریق و دستکاری نماید.
+        </p>
+        <br/>
+    </div>
+
+    <div id="ManInTheMidlleImage" class="step slide" data-x="8000" data-y="1700">
+        <br/>
+        <img style="display: block; margin-left: auto; margin-right: auto;" src="img/Picture4.jpg" width="800">
+    </div>
+
+    <div id="ManInTheMidlleProtection" class="step slide" data-x="8000" data-y="2500">
+        <p style="font-size: 40px; color: #4b91dc; float: right; direction: rtl">روش جلوگیری از اتک Man in the Middle
+            ؟</p>
+        <br/>
+        <br/>
+        <br/>
+        <p style="font-size: 26px; line-height: 52px;">
+            بیشتر راه‌های کارآمد برای مقابله با این حملات در سمت سرور یا رو‌تر قرار دارد.<br/><br/>
+            کاربر تقریبا کنترل اساسی ‌روی تعامل ندارد، اما می‌تواند از یک رمزگذاری قدرتمند برای ارتباط با سرور استفاده
+            کند. اما یک راه دیگر برای مقابله با این حملات، این است که هیچ گاه به WiFi عمومی‌ مستقیم متصل نشوید.
+        </p>
+    </div>
+
+    <div id="question1" class="step" data-x="8000" data-y="3000" data-rotate="300" data-scale="1" data-z="-5000">
+        <p style="direction: rtl; font-size: 50px">آیا سوالی دارید ؟</p>
+    </div>
+
+    <div id="BruteForce" class="step slide" data-x="7000" data-y="-1500" data-rotate="180">
+        <p style="font-size: 40px; color: #4b91dc; float: right; direction: rtl">حملات از نوع Brute Force</p>
+        <br/>
+        <br/>
+        <br/>
+        <p style="font-size: 26px; line-height: 52px;">
+            در این روش هکر با استفاده از نرم‌افزار‌های مخصوص و روش‌های خاص سعی می‌کند تمام عبارت‌های ممکن را بررسی کند
+            تا بتواند نام کاربری و رمز عبور را به دست آورد.
+        </p>
+        <br/>
+        <img style="display: block; margin-left: auto; margin-right: auto;" src="img/Picture5.png" width="600">
+    </div>
+
+    <div id="BruteForceDefence" class="step slide" data-x="7000" data-y="-700" data-rotate="180">
+        <p style="font-size: 32px; color: #4b91dc; float: right; direction: rtl">روش‌های عمومی بروت‌فورس</p>
+        <br/>
+        <br/>
+        <ul style="list-style: circle; font-size: 30px; margin-right: 30px; direction: rtl; line-height: 50px">
+            <li> امتحان کردن دستی رمز عبور</li>
+            <li> روش Dictionary</li>
+            <li>Mask Attack</li>
+            <li>Combination</li>
+            <li>Hybryd</li>
+        </ul>
+        <br/>
+        <p style="font-size: 32px; color: #4b91dc; float: right; direction: rtl">روش های مقابله با حملات Brute Force</p>
+        <br/>
+        <br/>
+        <ul style="list-style: circle; font-size: 30px; margin-right: 30px; direction: rtl; line-height: 50px">
+            <li> استفاده از کد Captcha در کنار فرم ورود</li>
+            <li>انتخاب نام کاربری مناسب</li>
+            <li>انتخاب رمز عبور مناسب و تغییر مداوم آن</li>
+        </ul>
+    </div>
+
+    <div id="BackDoor" class="step slide" data-x="7000" data-y="100">
+        <p style="font-size: 32px; color: #4b91dc; float: right; direction: rtl">حملات از نوع Back Door</p>
+        <br/>
+        <br/>
+        <p style="font-size: 26px; line-height: 52px;">
+            برنامه ای است که امکان دستيابی به يک سيستم را بدون بررسی و کنترل امنيتی، فراهم می نمايد.
+            <br/>
+            <br/>
+            برنامه نويسان معمولا چنين پتانسيل هائی را در برنامه ها پيش بينی تا امکان اشکال زدائی و ويرايش کدهای نوشته
+            شده در زمان تست بکارگيری نرم افزار، فراهم گردد. با توجه به اين که تعداد زيادی از امکانات فوق، مستند نمی
+            گردند، پس از اتمام مرحله تست به همان وضعيت باقی مانده و تهديدات امنيتی متعددی را به دنبال خواهند داشت.
+        </p>
+    </div>
+
+    <div id="BackDoorImage" class="step slide" data-x="7000" data-y="900">
+        <br/>
+        <br/>
+        <img style="display: block; margin-left: auto; margin-right: auto;" src="img/tp-link-diag.png" width="800">
+    </div>
+
+    <div id="question2" class="step" data-x="-1000" data-y="2000" data-scale="15">
+        <p style="direction: rtl; font-size: 35px">انواع حملات اینترنتی و راه های مقابله با آن</p>
+        <p style="direction: rtl; font-size: 40px">آیا <b class="scaling">سوالی</b> دارید ؟</p>
+    </div>
+
+    <div id="HowTo" class="step slide" data-x="4000" data-y="-1500">
+        <p style="font-size: 32px; color: #4b91dc; float: right; direction: rtl">تدوین و پیاده سازی سیاست امنیتی :</p>
+        <br/>
+        <br/>
+        <br/>
+        <ul style="list-style: circle; font-size: 24px; margin-right: 30px; direction: rtl; line-height: 55px">
+            <li>بررسی نقش هر سرويس دهنده به همراه پيکربندی انجام شده در جهت انجام وظايف مربوطه در شبکه</li>
+            <li>انطباق سرويس ها، پروتکل ها و برنامه های نصب شده با خواسته های يک کاربر</li>
+            <li>بررسی تغييرات لازم در خصوص هر يک از سرويس دهندگان فعلی (افزودن و يا حذف  سرويس ها و پروتکل های غيرضروری،
+                تنظيم دقيق امنيتی سرويس ها و پروتکل های فعال)
+            </li>
+        </ul>
+    </div>
+
+    <div id="Services" class="step slide" data-x="4000" data-y="-700">
+        <br/>
+        <p style="font-size: 32px; color: #4b91dc; float: right; direction: rtl; text-align: center">برخی از سرویس های
+            پیش فعال در سیستم عامل ویندوز</p>
+        <br/>
+        <br/>
+        <br/>
+        <ul style="list-style: circle; font-size: 24px; margin-left: 30px; direction: ltr; line-height: 55px">
+            <li>IIS (Internet Information Services)</li>
+            <li>NTP (Network Time Protocol)</li>
+            <li>RDC (Remote Desktop Connection)</li>
+            <li>DNS (Domain Name System)</li>
+            <li>And etc …</li>
+        </ul>
+        <br/>
+        <p style="font-size: 26px; line-height: 52px;">
+            مهم ترین وظیفه مسئول امنیتی غیر فعال کردن سرویس های بدون استفاده می باشد.
+        </p>
+    </div>
+
+    <div id="ImportantServices" class="step slide" data-x="4000" data-y="100">
+        <p style="font-size: 32px; color: #4b91dc; float: right; direction: rtl; text-align: center">سرويس های حياتی و
+            موردنياز</p>
+        <br/>
+        <br/>
+        <br/>
+        <p style="font-size: 26px; line-height: 52px;">
+            هر سيستم عامل به منظور ارائه خدمات و انجام عمليات مربوطه، نيازمند استفاده از سرويس های متفاوتی است. در حالت
+            ايده آل، عمليات نصب و پيکربندی يک سرويس دهنده می بايست صرفا شامل سرويس ها و پروتکل های ضروری و مورد نياز به
+            منظور انجام وظايف هر سرويس دهنده باشد. معمولا توليد کنندگان سيستم های عامل در مستندات مربوطه به اين سرويس ها
+            اشاره می نمايند.
+        </p>
+    </div>
+
+    <div id="NTP" class="step slide" data-x="4000" data-y="900">
+        <p style="font-size: 32px; color: #4b91dc; float: right; direction: rtl; text-align: center">سرویس های
+            ویندوز</p>
+        <br/>
+        <br/>
+        <br/>
+        <img style="display: block; margin-left: auto; margin-right: auto;" src="img/ntp.png" width="800">
+    </div>
+
+    <div id="ServicesDisable" class="step slide" data-x="4000" data-y="1700" data-z="-1000">
+        <p style="font-size: 32px; color: #4b91dc; float: right; direction: rtl; text-align: center">مزايای غيرفعال
+            نمودن پروتکل ها و سرويس های غيرضروری</p>
+        <br/>
+        <br/>
+        <br/>
+        <p style="font-size: 26px; line-height: 52px;">
+            مهاجمان همواره قربانيان خود را از بين سرويس دهندگانی که به درستی پيکربندی نشده اند، انتخاب می نمايند.
+            <br/><br/>
+            مهاجمان می توانند با استفاده از آنان، آسيب های جدی را متوجه شبکه نمايند. تهديد فوق می تواند از درون شبکه و
+            يا خارج از شبکه متوجه يک شبکه کامپيوتری گردد.
+        </p>
+    </div>
+
+    <div id="author" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10"
+         data-scale="2">
+        <p style="direction: rtl; font-size: 45px">با تشکر از توجه شما</p>
+        <br/>
+        <p style="direction: rtl; font-size: 40px">تهیه و تنظیم: امین مستانی یزد</p>
+        <a style="direction: rtl; font-size: 32px" href="https://github.com/mastani/AttacksPresentation">Github.com/Mastani/AttacksPresentation</a>
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
